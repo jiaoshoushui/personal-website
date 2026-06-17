@@ -17,13 +17,28 @@
         } catch (e) {
           document.documentElement.setAttribute('data-theme', 'dark')
         }
+
+        /* 安卓平板横屏：联想等浏览器 viewport 过窄时提前修正，避免两侧大黑边 */
+        try {
+          var sw = Math.max(screen.width, screen.height)
+          var sh = Math.min(screen.width, screen.height)
+          var landscape = window.matchMedia('(orientation: landscape)').matches
+          var coarse = window.matchMedia('(pointer: coarse)').matches
+          if (landscape && coarse && sh >= 600 && window.innerWidth < sw * 0.72) {
+            var meta = document.querySelector('meta[name=viewport]')
+            if (meta) {
+              meta.setAttribute('content', 'width=' + sw + ', initial-scale=1, viewport-fit=cover')
+              document.documentElement.setAttribute('data-viewport-fixed', '1')
+            }
+          }
+        } catch (e2) {}
       })()
     </script>
-    <script type="module" crossorigin src="/assets/index-hTlH3Glb.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/agent-5tXJJ3C5.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-C-QV_t-2.css">
+    <script type="module" crossorigin src="/assets/index-CvSo6ve4.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/agent-DezqnXBn.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-ubOfzQE4.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app"></div>
   </body>
 </html>
