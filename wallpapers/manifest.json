@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-23T08:30:40.220Z",
+  "version": "2026-06-23T09:03:59.901Z",
   "categories": [
     "人物",
     "动物",
@@ -5234,18 +5234,6 @@
       "source": "人物/人物24.webp"
     },
     {
-      "id": "phone-renwu-2dc8ead2",
-      "title": "人物场景28",
-      "device": "phone",
-      "category": "人物",
-      "width": 720,
-      "height": 1365,
-      "sizeBytes": 90308,
-      "thumb": "thumb/phone/renwu/人物场景28.webp",
-      "full": "phone/人物/人物场景28.webp",
-      "source": "人物/人物场景28.webp"
-    },
-    {
       "id": "pc-fengjing-7e54b8f3",
       "title": "赛博朋克赛博城市",
       "device": "pc",
@@ -5616,6 +5604,18 @@
       "thumb": "thumb/pc/dongman/雨景艺术.webp",
       "full": "pc/动漫/雨景艺术.webp",
       "source": "动漫/雨景艺术.webp"
+    },
+    {
+      "id": "phone-renwu-505f1e44",
+      "title": "雨中路灯下",
+      "device": "phone",
+      "category": "人物",
+      "width": 720,
+      "height": 1365,
+      "sizeBytes": 90308,
+      "thumb": "thumb/phone/renwu/雨中路灯下.webp",
+      "full": "phone/人物/雨中路灯下.webp",
+      "source": "人物/雨中路灯下.webp"
     },
     {
       "id": "pc-fengjing-b29adff3",
